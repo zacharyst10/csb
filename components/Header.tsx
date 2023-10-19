@@ -20,10 +20,10 @@ export default function Header() {
         <nav className="flex justify-between">
           <div className="flex">
             <Sheet>
-              <SheetTrigger>
+              <SheetTrigger className="sm:hidden block ">
                 <Menu />
               </SheetTrigger>
-              <SheetContent>
+              <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle>
                     <Image
@@ -44,7 +44,13 @@ export default function Header() {
               </SheetContent>
             </Sheet>
 
-            <Image src="/logo.png" alt="logo" width={100} height={100} />
+            <Image
+              src="/logo.png"
+              alt="logo"
+              width={100}
+              height={100}
+              className="hidden sm:block"
+            />
           </div>
           <div className=" items-center mx-auto hidden md:flex">
             <Navbar />
