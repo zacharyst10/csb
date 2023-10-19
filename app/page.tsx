@@ -1,5 +1,10 @@
+import Container from "@/components/Container";
 import Image from "next/image";
 
 export default function Home() {
-  return <div>hello</div>;
+  return (
+    <Container>
+      <div>hello</div>
+    </Container>
+  );
 }
