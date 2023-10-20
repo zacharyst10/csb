@@ -26,12 +26,14 @@ export default function Header() {
               <SheetContent side="left">
                 <SheetHeader>
                   <SheetTitle>
-                    <Image
-                      src="/logo.png"
-                      alt="logo"
-                      width={100}
-                      height={100}
-                    />
+                    <Link href="/">
+                      <Image
+                        src="/logo.png"
+                        alt="logo"
+                        width={100}
+                        height={100}
+                      />
+                    </Link>
                   </SheetTitle>
                   <SheetDescription>
                     <div className="flex flex-col">
@@ -44,13 +46,9 @@ export default function Header() {
               </SheetContent>
             </Sheet>
 
-            <Image
-              src="/logo.png"
-              alt="logo"
-              width={100}
-              height={100}
-              className="hidden sm:block"
-            />
+            <Link href="/">
+              <Image src="/logo.png" alt="logo" width={100} height={100} />
+            </Link>
           </div>
           <div className=" items-center mx-auto hidden md:flex">
             <Navbar />
