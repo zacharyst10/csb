@@ -1,10 +1,17 @@
+import { CardDemo } from "@/components/Card";
 import Container from "@/components/Container";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <Container>
-      <div>hello</div>
+      <div className="grid grid-cols-3 gap-4">
+        <CardDemo />
+        <CardDemo />
+        <CardDemo />
+        <CardDemo />
+        <CardDemo />
+        <CardDemo />
+      </div>
     </Container>
   );
 }
