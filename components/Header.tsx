@@ -23,7 +23,7 @@ export default function Header() {
               <SheetTrigger className="sm:hidden block ">
                 <Menu />
               </SheetTrigger>
-              <SheetContent side={"left"}>
+              <SheetContent side="left">
                 <SheetHeader>
                   <SheetTitle>
                     <Image
