@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import { ThemeProvider } from "@/components/theme-provider";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,14 +19,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-background`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableColorScheme
         >
-          <Header />
-          {children}
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>
