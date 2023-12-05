@@ -37,9 +37,11 @@ export default function Header() {
                   </SheetTitle>
                   <SheetDescription>
                     <div className="flex flex-col">
-                      <Link href="/">Home</Link>
-                      <Link href="/">About</Link>
-                      <Link href="/">Blog</Link>
+                      <Link href="/">Our Story</Link>
+                      <Link href="/">Capabilities</Link>
+                      <Link href="/">Innovation</Link>
+                      <Link href="/">Network</Link>
+                      <Link href="/">Contact</Link>
                     </div>
                   </SheetDescription>
                 </SheetHeader>
