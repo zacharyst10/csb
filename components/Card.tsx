@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Switch } from "@/components/ui/switch";
-import Loading from "@/app/loading";
 import Image from "next/image";
 
 type CardProps = React.ComponentProps<typeof Card>;
