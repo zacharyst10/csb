@@ -3,5 +3,5 @@ import Container from "@/components/Container";
 import { Suspense } from "react";
 
 export default function Home() {
-  return <Container>poop</Container>;
+  return <Container>Test</Container>;
 }

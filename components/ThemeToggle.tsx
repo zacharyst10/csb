@@ -40,11 +40,6 @@ export default function ModeToggle() {
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-      <div className="px-5">
-        <button onClick={() => setLight(!light)}>
-          {light ? <Sun /> : <Moon />}
-        </button>
-      </div>
     </>
   );
 }
